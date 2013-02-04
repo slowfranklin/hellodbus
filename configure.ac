@@ -1,6 +1,6 @@
-AC_INIT()
+AC_INIT
 AM_INIT_AUTOMAKE(hello-dbus3, 0.1)
-AM_CONFIG_HEADER(config.h)
+AC_CONFIG_HEADERS([config.h])
 
 AC_PROG_CC
 
@@ -30,5 +30,6 @@ AC_SUBST(DBUS_GLIB_CFLAGS)
 AC_SUBST(DBUS_GLIB_LIBS)
 
 
-AC_OUTPUT([Makefile
+AC_CONFIG_FILES([Makefile
            src/Makefile])
+AC_OUTPUT
